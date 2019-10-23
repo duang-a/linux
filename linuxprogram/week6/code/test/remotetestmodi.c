@@ -1,4 +1,4 @@
-#include "/home/wuzhoufeng/linux/linuxprogram/week6/code/staticlib.h"
+#include "/home/wuzhoufeng/linux/linuxprogram/week6/code/staticlib/staticlib.h"
 #include <stdio.h>
 int main()
 {
