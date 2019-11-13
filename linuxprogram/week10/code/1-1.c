@@ -22,18 +22,19 @@ int main(void)
 	atexit(callback1);
 	atexit(callback2);
 	FILE *fp;
-	char buf[]={"hello world"};
+	char buf[]={"fputs use full buffer!"};
 	if((fp=fopen("test.dat","w+")) == NULL)
 	{
-		perror("failed to create file!\n");
+		perror("failed to open!\n");
 		return -1;
 	}
 	if(fputs(buf, fp) == EOF)
 	{
-		perror("failed to create file!\n");
+		perror("failed to fputs!\n");
 		return -1;
 	}
-	printf("test massage!");
+	printf("-------running in main!--------\n");
+	printf("printf use line buffer");
 	exit(0);
 	//_exit(0);
 	//return 0;
